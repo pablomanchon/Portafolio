@@ -1,5 +1,5 @@
 import "../styles/header.scss";
-import logo from "../assets/Logo.png";
+import logo from "../../public/assets/Logo.png";
 import { motion } from "framer-motion";
 export const Header = () => {
   return (

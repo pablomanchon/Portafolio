@@ -1,5 +1,5 @@
-import perfil from "../assets/perfil.jpg";
 import "../styles/about.scss";
+import perfil from "../../public/assets/perfil.jpg";
 import { motion, useAnimation } from "framer-motion";
 export const About = () => {
   const control = useAnimation();
