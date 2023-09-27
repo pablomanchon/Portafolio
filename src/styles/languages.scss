@@ -1,0 +1,33 @@
+.languages {
+  padding: 1rem;
+  width: 100%;
+  height: 40rem;
+  background-color: rgb(1, 74, 54);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  hr {
+    height: 12rem;
+    border: 2px white solid;
+    border-radius: 1rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    width: 20rem;
+    list-style: none;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      align-items: center;
+      .logo {
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
+}
