@@ -1,8 +1,7 @@
-import React from "react";
 import "../styles/projects.scss";
-import cartasBares from "../assets/proyectos/cartas-bares.png";
-import pokemons from "../assets/proyectos/pokemons.png";
-import tiendaRopa from "../assets/proyectos/tienda-ropa.png";
+import cartasBares from "../../public/assets/proyectos/cartas-bares.png";
+import pokemons from "../../public/assets/proyectos/pokemons.png";
+import tiendaRopa from "../../public/assets/proyectos/tienda-ropa.png";
 
 const projects = [
   {
