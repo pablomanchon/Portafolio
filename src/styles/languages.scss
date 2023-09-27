@@ -6,6 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  h3 {
+    font-size: 2rem;
+  }
   hr {
     height: 12rem;
     border: 2px white solid;
@@ -28,6 +31,16 @@
         height: 3rem;
         object-fit: contain;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .languages {
+    flex-direction: column-reverse;
+    hr {
+      height: 0;
+      width: 90%;
     }
   }
 }
