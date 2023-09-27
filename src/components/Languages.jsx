@@ -3,7 +3,6 @@ import javaLogo from "/src/assets/logos-lenguajes/java-logo.png";
 import reactLogo from "/src/assets/logos-lenguajes/react-logo.png";
 import viteLogo from "/src/assets/logos-lenguajes/vite-logo.png";
 import sqlLogo from "/src/assets/logos-lenguajes/sql-logo.png";
-import javascriptLogo from "/src/assets/logos-lenguajes/javascript-logo.png";
 import springLogo from "/src/assets/logos-lenguajes/spring-logo.png";
 import apiLogo from "/src/assets/logos-lenguajes/api-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
@@ -26,7 +25,7 @@ export const Languages = () => {
             <span>SQL</span>
           </li>
           <li>
-            <img className='logo' src={javascriptLogo} />
+            <img className='logo' src={javaLogo} />
             <span>JavaScript</span>
           </li>
           <li>
