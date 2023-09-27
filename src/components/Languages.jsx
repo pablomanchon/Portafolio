@@ -7,40 +7,64 @@ import sqlLogo from "/src/assets/logos-lenguajes/sql-logo.png";
 import springLogo from "/src/assets/logos-lenguajes/spring-logo.png";
 import apiLogo from "/src/assets/logos-lenguajes/api-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
+import javascriptLogo from "/src/assets/logos-lenguajes/javaScript-logo.png";
+import { useState } from "react";
+import { Element } from "react-scroll";
 
 export const Languages = () => {
+  const [isInview, setIsInview] = useState(false);
+
+  const languages = [
+    {
+      logo: reactLogo,
+      name: "React",
+    },
+    {
+      logo: viteLogo,
+      name: "Vite",
+    },
+    {
+      logo: sqlLogo,
+      name: "SQL",
+    },
+    {
+      logo: javascriptLogo,
+      name: "JavaScript",
+    },
+    {
+      logo: javaLogo,
+      name: "Java",
+    },
+    {
+      logo: springLogo,
+      name: "Spring",
+    },
+    {
+      logo: apiLogo,
+      name: "APIseae",
+    },
+  ];
+
   return (
-    <div className='languages'>
+    <motion.Element
+      name='languages'
+      onViewportEnter={() => setIsInview(true)}
+      onViewportLeave={() => setIsInview(false)}
+      className='languages'>
       <ul>
-        <AnimatePresence>
-          <li>
-            <img className='logo' src={reactLogo} />
-            <span>React</span>
-          </li>
-          <li>
-            <img className='logo' src={viteLogo} />
-            <span>Vite</span>
-          </li>
-          <li>
-            <img className='logo' src={sqlLogo} />
-            <span>SQL</span>
-          </li>
-          <li>
-            <img className='logo' src={javaScrpitLogo} />
-            <span>JavaScript</span>
-          </li>
-          <li>
-            <img className='logo' src={javaLogo} />
-            <span>Java</span>
-          </li>
-          <li>
-            <img className='logo' src={springLogo} />
-            <span>Spring</span>
-          </li>
-          <li>
-            <img className='logo' src={apiLogo} />
-            <span>APIs</span>
-          </li>
+        <AnimatePresence mode='sync'>
+          {isInview &&
+            languages.map((language, key) => (
+              <motion.li
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+                key={key}>
+                <img className='logo' src={language.logo} />
+                <span>{language.name}</span>
+              </motion.li>
+            ))}
         </AnimatePresence>
       </ul>
       <hr />
@@ -50,6 +74,6 @@ export const Languages = () => {
         className='title'>
         Developer stacks
       </motion.h3>
-    </div>
+    </motion.Element>
   );
 };

@@ -1,6 +1,7 @@
 import "../styles/about.scss";
 import perfil from "../../public/assets/perfil.jpg";
 import { motion, useAnimation } from "framer-motion";
+import { Element } from "react-scroll";
 export const About = () => {
   const control = useAnimation();
   const variantshr1 = {
@@ -45,7 +46,7 @@ export const About = () => {
   };
 
   return (
-    <section className='perfil'>
+    <Element name='perfil' className='perfil'>
       <img className='perfil-imagen' src={perfil} />
       <motion.div
         variants={variants}
@@ -86,6 +87,6 @@ export const About = () => {
           className='last-hr'
         />
       </motion.div>
-    </section>
+    </Element>
   );
 };

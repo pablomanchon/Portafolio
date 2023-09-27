@@ -1,19 +1,26 @@
 import "../styles/header.scss";
 import logo from "../../public/assets/Logo.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 export const Header = () => {
   return (
     <header>
       <img className='logo' src={logo} />
       <nav>
         <motion.h3 whileHover={{ scale: 1.2, y: -10, x: -5, rotate: -5 }}>
-          About me
+          <Link to='perfil' smooth={true} duration={500} offset={-100}>
+            Sobre mi
+          </Link>
         </motion.h3>
         <motion.h3 whileHover={{ scale: 1.2, y: -10, x: 5, rotate: 5 }}>
-          Projects
+          <Link to='projects' smooth={true} duration={500} offset={-100}>
+            Proyectos
+          </Link>
         </motion.h3>
         <motion.h3 whileHover={{ scale: 1.2, y: -10, x: -5, rotate: -5 }}>
-          Languages
+          <Link to='languages' smooth={true} duration={500} offset={-100}>
+            Lenguajes
+          </Link>
         </motion.h3>
       </nav>
     </header>
