@@ -3,7 +3,7 @@ import javaLogo from "../assets/logos-lenguajes/java-logo.png";
 import reactLogo from "../assets/logos-lenguajes/react-logo.png";
 import viteLogo from "../assets/logos-lenguajes/vite-logo.png";
 import sqlLogo from "../assets/logos-lenguajes/sql-logo.png";
-import javascriptLogo from "../assets/logos-lenguajes/javascript-logo.png";
+import javascriptLogo from "../../assets/logos-lenguajes/javascript-logo.png";
 import springLogo from "../assets/logos-lenguajes/spring-logo.png";
 import apiLogo from "../assets/logos-lenguajes/api-logo.png";
 import { AnimatePresence, motion } from "framer-motion";
