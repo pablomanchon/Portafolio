@@ -2,6 +2,7 @@ import "../styles/languages.scss";
 import javaLogo from "/src/assets/logos-lenguajes/java-logo.png";
 import reactLogo from "/src/assets/logos-lenguajes/react-logo.png";
 import viteLogo from "/src/assets/logos-lenguajes/vite-logo.png";
+import javaScrpitLogo from "/src/assets/logos-lenguajes/javaScript-logo.png";
 import sqlLogo from "/src/assets/logos-lenguajes/sql-logo.png";
 import springLogo from "/src/assets/logos-lenguajes/spring-logo.png";
 import apiLogo from "/src/assets/logos-lenguajes/api-logo.png";
@@ -25,7 +26,7 @@ export const Languages = () => {
             <span>SQL</span>
           </li>
           <li>
-            <img className='logo' src={javaLogo} />
+            <img className='logo' src={javaScrpitLogo} />
             <span>JavaScript</span>
           </li>
           <li>
