@@ -18,9 +18,11 @@ header {
     margin-right: 2rem;
     a {
       text-decoration: none;
-      display: none;
+      i {
+        display: none;
+        font-size: 3rem;
+      }
       color: white;
-      font-size: 3rem;
     }
     h3 {
       cursor: pointer;
@@ -35,7 +37,7 @@ header {
 @media screen and (max-width: 768px) {
   header {
     nav {
-      a {
+      a i {
         display: block;
       }
       h3 {
