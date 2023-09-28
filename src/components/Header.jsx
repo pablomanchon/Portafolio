@@ -28,7 +28,7 @@ export const Header = () => {
         </a>
 
         <motion.h3 whileHover={{ scale: 1.2, y: -10, x: -5, rotate: -5 }}>
-          <Link to='perfil' smooth={true} duration={500}>
+          <Link to='perfil' smooth={true} duration={500} offset={-100}>
             Sobre mi
           </Link>
         </motion.h3>
@@ -43,7 +43,7 @@ export const Header = () => {
           </Link>
         </motion.h3>
         <motion.h3 whileHover={{ scale: 1.2, y: -10, x: 5, rotate: 5 }}>
-          <Link to='contact' smooth={true} duration={500} offset={-100}>
+          <Link to='contact' smooth={true} duration={500} offset={100}>
             Contactame
           </Link>
         </motion.h3>
