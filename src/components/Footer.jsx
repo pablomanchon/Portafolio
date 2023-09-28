@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import { toast } from "react-toastify";
 import axios from "axios";
 
+const phoneNumber = "+5492616416111";
+const whatsappURL = `https://wa.me/${phoneNumber}`;
+
 export const Footer = () => {
-  const phoneNumber = "+5492616416111";
-  const whatsappURL = `https://wa.me/${phoneNumber}`;
   const [form, setForm] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 

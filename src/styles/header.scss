@@ -16,6 +16,12 @@ header {
     position: absolute;
     right: 0;
     margin-right: 2rem;
+    a {
+      text-decoration: none;
+      display: none;
+      color: white;
+      font-size: 3rem;
+    }
     h3 {
       cursor: pointer;
       padding: 0.3rem;
@@ -29,7 +35,12 @@ header {
 @media screen and (max-width: 768px) {
   header {
     nav {
-      display: none;
+      a {
+        display: block;
+      }
+      h3 {
+        display: none;
+      }
     }
   }
 }
