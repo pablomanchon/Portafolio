@@ -16,7 +16,7 @@ export const Project = ({ project, index }) => {
           : { x: esPar(index) ? -100 : 100, opacity: 0 }
       }
       className={esPar(index) ? "card" : "card invert"}>
-      <div>
+      <div className='name-description'>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
       </div>

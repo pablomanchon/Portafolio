@@ -17,14 +17,13 @@ const projects = [
   {
     name: "Pokemons",
     description:
-      "Un proyecto en el que consumo una API de pókemon, lo hice para practicar mi frontend",
+      "Un proyecto en el que consumo una API de pókemon, lo hice para practicar animaciones",
     image: pokemons,
     url: "https://pokemons-bice.vercel.app/",
   },
   {
     name: "Tienda de ropa",
-    description:
-      "Una tienda de ropa con carrito de compras y backend en Spring, este es el link a su version BETA",
+    description: "Una tienda de ropa con carrito de compras",
     image: tiendaRopa,
     url: "https://front-velasco-git-falsasprendas-pablomanchon.vercel.app/",
   },
