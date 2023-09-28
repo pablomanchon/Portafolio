@@ -1,52 +1,53 @@
 import "../styles/about.scss";
 import perfil from "../../public/assets/perfil.jpg";
 import { motion, useAnimation } from "framer-motion";
-import { Element } from "react-scroll";
+
+const variantshr1 = {
+  inView: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.4,
+    },
+  },
+  noView: {
+    opacity: 0,
+    x: -200,
+  },
+};
+const variantshr2 = {
+  inView: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.4,
+    },
+  },
+  noView: {
+    opacity: 0,
+    x: 200,
+  },
+};
+const variants = {
+  inView: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.8,
+      type: "spring",
+    },
+  },
+  noView: {
+    opacity: 0,
+    x: -200,
+  },
+};
+
 export const About = () => {
   const control = useAnimation();
-  const variantshr1 = {
-    inView: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.4,
-      },
-    },
-    noView: {
-      opacity: 0,
-      x: -200,
-    },
-  };
-  const variantshr2 = {
-    inView: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 0.4,
-      },
-    },
-    noView: {
-      opacity: 0,
-      x: 200,
-    },
-  };
-  const variants = {
-    inView: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.8,
-        type: "spring",
-      },
-    },
-    noView: {
-      opacity: 0,
-      x: -200,
-    },
-  };
 
   return (
-    <Element name='perfil' className='perfil'>
+    <section name='perfil' className='perfil'>
       <img className='perfil-imagen' src={perfil} />
       <motion.div
         variants={variants}
@@ -87,6 +88,6 @@ export const About = () => {
           className='last-hr'
         />
       </motion.div>
-    </Element>
+    </section>
   );
 };

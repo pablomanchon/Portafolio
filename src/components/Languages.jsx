@@ -2,14 +2,12 @@ import "../styles/languages.scss";
 import javaLogo from "/src/assets/logos-lenguajes/java-logo.png";
 import reactLogo from "/src/assets/logos-lenguajes/react-logo.png";
 import viteLogo from "/src/assets/logos-lenguajes/vite-logo.png";
-import javaScrpitLogo from "/src/assets/logos-lenguajes/javaScript-logo.png";
 import sqlLogo from "/src/assets/logos-lenguajes/sql-logo.png";
 import springLogo from "/src/assets/logos-lenguajes/spring-logo.png";
 import apiLogo from "/src/assets/logos-lenguajes/api-logo.png";
-import { AnimatePresence, motion } from "framer-motion";
 import javascriptLogo from "/src/assets/logos-lenguajes/javaScript-logo.png";
 import { useState } from "react";
-import { Element } from "react-scroll";
+import { motion } from "framer-motion";
 
 export const Languages = () => {
   const [isInview, setIsInview] = useState(false);
@@ -41,39 +39,41 @@ export const Languages = () => {
     },
     {
       logo: apiLogo,
-      name: "APIseae",
+      name: "APIs",
     },
   ];
 
   return (
-    <motion.Element
-      name='languages'
-      onViewportEnter={() => setIsInview(true)}
-      onViewportLeave={() => setIsInview(false)}
-      className='languages'>
-      <ul>
-        <AnimatePresence mode='sync'>
-          {isInview &&
-            languages.map((language, key) => (
+    <section name='languages' className='languages'>
+      <motion.ul
+        onViewportEnter={() => setIsInview(true)}
+        onViewportLeave={() => setIsInview(false)}>
+        {languages.map(
+          (language, index) =>
+            isInview && (
               <motion.li
+                key={index}
                 initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-                key={key}>
-                <img className='logo' src={language.logo} />
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{ duration: 0.5, delay: index / 8 }}>
+                <img className='logo' src={language.logo} alt={language.name} />
                 <span>{language.name}</span>
               </motion.li>
-            ))}
-        </AnimatePresence>
-      </ul>
-      <hr />
+            )
+        )}
+      </motion.ul>
+      <motion.hr
+        whileInView={{ scale: [1, 1.2, 1], transition: { duration: 2 } }}
+      />
       <motion.h3
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+        initial={{ opacity: 0, x: -100 }}
         className='title'>
         Developer stacks
       </motion.h3>
-    </motion.Element>
+    </section>
   );
 };
