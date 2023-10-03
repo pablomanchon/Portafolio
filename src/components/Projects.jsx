@@ -23,7 +23,7 @@ const projects = [
   },
   {
     name: "Tienda de ropa",
-    description: "Una tienda de ropa con carrito de compras",
+    description: "Una tienda de ropa con carrito de compras (En proceso)",
     image: tiendaRopa,
     url: "https://front-velasco-git-falsasprendas-pablomanchon.vercel.app/",
   },
@@ -42,7 +42,8 @@ export const Projects = () => {
             isInView
               ? { x: 0, opacity: 1, transition: { duration: 0.5 } }
               : { x: -100, opacity: 0 }
-          }>
+          }
+        >
           Projects
         </motion.h2>
         <motion.hr
