@@ -17,13 +17,15 @@ export const Header = () => {
         <a
           href='https://www.linkedin.com/in/pablo-manchon-richardi-471346252/'
           target='_blank'
-          rel='noreferrer noopener'>
+          rel='noreferrer noopener'
+        >
           <i className='bi bi-linkedin' />
         </a>
         <a
           href='https://github.com/pablomanchon'
           target='_blank'
-          rel='noreferrer noopener'>
+          rel='noreferrer noopener'
+        >
           <i className='bi bi-github' />
         </a>
 
