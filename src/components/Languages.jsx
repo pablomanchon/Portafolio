@@ -8,6 +8,7 @@ import apiLogo from "/src/assets/logos-lenguajes/api-logo.png";
 import javascriptLogo from "/src/assets/logos-lenguajes/javaScript-logo.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 
 export const Languages = () => {
   const [isInview, setIsInview] = useState(false);
@@ -47,7 +48,8 @@ export const Languages = () => {
     <section name='languages' className='languages'>
       <motion.ul
         onViewportEnter={() => setIsInview(true)}
-        onViewportLeave={() => setIsInview(false)}>
+        onViewportLeave={() => setIsInview(false)}
+      >
         {languages.map(
           (language, index) =>
             isInview && (
@@ -58,7 +60,8 @@ export const Languages = () => {
                   opacity: 1,
                   y: 0,
                 }}
-                transition={{ duration: 0.5, delay: index / 8 }}>
+                transition={{ duration: 0.5, delay: index / 8 }}
+              >
                 <img className='logo' src={language.logo} alt={language.name} />
                 <span>{language.name}</span>
               </motion.li>
@@ -71,7 +74,8 @@ export const Languages = () => {
       <motion.h3
         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
         initial={{ opacity: 0, x: -100 }}
-        className='title'>
+        className='title'
+      >
         Developer stacks
       </motion.h3>
     </section>

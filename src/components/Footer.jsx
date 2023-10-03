@@ -70,7 +70,8 @@ export const Footer = () => {
             <a
               href='https://www.linkedin.com/in/pablo-manchon-richardi-471346252/'
               target='_blank'
-              rel='noreferrer noopener'>
+              rel='noreferrer noopener'
+            >
               <i className='bi bi-linkedin' />
               <span>Pablo Manchon Richardi</span>
             </a>
@@ -79,7 +80,8 @@ export const Footer = () => {
             <a
               href='https://github.com/pablomanchon'
               target='_blank'
-              rel='noreferrer noopener'>
+              rel='noreferrer noopener'
+            >
               <i className='bi bi-github' />
               <span>pablomanchon</span>
             </a>

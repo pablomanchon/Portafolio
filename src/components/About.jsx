@@ -66,8 +66,10 @@ export const About = () => {
         />
         <h3>Desarrollador web Full-Stack</h3>
         <p>
-          Me apasiona todo lo que tenga que ver con tecnología. Me gusta viajar,
-          aprender, enseñar y ponerme a prueba
+          Me gusta estar en constante aprendizaje y evolución, razón por la que
+          decidí dar un giro a mi carrera profesional y dedicarme por completo
+          al mundo del desarrollo web. Me siento cómodo trabajando en equipo, me
+          considero una persona organizada y comprometida con mi trabajo
         </p>
         <div className='icons'>
           <motion.a
