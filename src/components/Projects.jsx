@@ -1,7 +1,7 @@
 import "../styles/projects.scss";
 import cartasBares from "../../public/assets/proyectos/cartas-bares.png";
 import pokemons from "../../public/assets/proyectos/pokemons.png";
-import tiendaRopa from "../../public/assets/proyectos/tienda-ropa.png";
+import tiendaVino from "../../public/assets/proyectos/vinoProject.jpg";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Project } from "./Project";
@@ -22,10 +22,10 @@ const projects = [
     url: "https://pokemons-bice.vercel.app/",
   },
   {
-    name: "Tienda de ropa",
-    description: "Una tienda de ropa con carrito de compras (En proceso)",
-    image: tiendaRopa,
-    url: "https://front-velasco-git-falsasprendas-pablomanchon.vercel.app/",
+    name: "Tienda de Vinos",
+    description: "Una tienda de vinos con carrito de compras",
+    image: tiendaVino,
+    url: "https://we-wines.vercel.app/",
   },
 ];
 
