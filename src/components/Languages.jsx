@@ -2,18 +2,30 @@ import "../styles/languages.scss";
 import javaLogo from "/src/assets/logos-lenguajes/java-logo.png";
 import reactLogo from "/src/assets/logos-lenguajes/react-logo.png";
 import viteLogo from "/src/assets/logos-lenguajes/vite-logo.png";
-import sqlLogo from "/src/assets/logos-lenguajes/sql-logo.png";
+import mySQLlogo from "/src/assets/logos-lenguajes/mysql-logo.png";
 import springLogo from "/src/assets/logos-lenguajes/spring-logo.png";
 import apiLogo from "/src/assets/logos-lenguajes/api-logo.png";
 import javascriptLogo from "/src/assets/logos-lenguajes/javaScript-logo.png";
+import postgreLogo from "/src/assets/logos-lenguajes/postgre-logo.png";
+import nodeJsLogo from "/src/assets/logos-lenguajes/node-logo.png";
+import nestJsLogo from "/src/assets/logos-lenguajes/nest-logo.png";
+import typeScriptLogo from "/src/assets/logos-lenguajes/typescript-logo.png";
+import databasesLogo from "/src/assets/logos-lenguajes/databases-logo.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { toast } from "react-toastify";
 
 export const Languages = () => {
   const [isInview, setIsInview] = useState(false);
 
   const languages = [
+    {
+      logo: javascriptLogo,
+      name: "JavaScript",
+    },
+    {
+      logo: typeScriptLogo,
+      name: "TypeScript",
+    },
     {
       logo: reactLogo,
       name: "React",
@@ -23,12 +35,20 @@ export const Languages = () => {
       name: "Vite",
     },
     {
-      logo: sqlLogo,
-      name: "SQL",
+      logo: mySQLlogo,
+      name: "MySQL",
     },
     {
-      logo: javascriptLogo,
-      name: "JavaScript",
+      logo: postgreLogo,
+      name: "PostgreSQL",
+    },
+    {
+      logo: nodeJsLogo,
+      name: "NodeJs",
+    },
+    {
+      logo: nestJsLogo,
+      name: "NestJs",
     },
     {
       logo: javaLogo,
@@ -37,6 +57,10 @@ export const Languages = () => {
     {
       logo: springLogo,
       name: "Spring",
+    },
+    {
+      logo: databasesLogo,
+      name: "Databases",
     },
     {
       logo: apiLogo,
