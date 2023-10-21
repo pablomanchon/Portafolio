@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   background-color: rgb(29, 83, 69);
-  flex-wrap: wrap;
   .perfil-imagen {
     z-index: 2;
     flex: 1;
@@ -54,6 +53,15 @@
     }
     .last-hr {
       align-self: flex-end;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .perfil {
+    flex-direction: column;
+    .perfil-imagen {
+      width: 100%;
     }
   }
 }
