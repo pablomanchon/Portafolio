@@ -1,7 +1,7 @@
 import "../styles/projects.scss";
-import cartasBares from "../../public/assets/proyectos/cartas-bares.png";
-import pokemons from "../../public/assets/proyectos/pokemons.png";
-import tiendaVino from "../../public/assets/proyectos/vinoProject.jpg";
+import cartasBares from "../../public/assets/proyectos/cartas-bares.webp";
+import pokemons from "../../public/assets/proyectos/pokemons.webp";
+import tiendaVino from "../../public/assets/proyectos/vinoProject.webp";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Project } from "./Project";
