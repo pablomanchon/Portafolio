@@ -1,16 +1,16 @@
 import "../styles/languages.scss";
-import javaLogo from "/src/assets/logos-lenguajes/java-logo.png";
-import reactLogo from "/src/assets/logos-lenguajes/react-logo.png";
-import viteLogo from "/src/assets/logos-lenguajes/vite-logo.png";
-import mySQLlogo from "/src/assets/logos-lenguajes/mysql-logo.png";
-import springLogo from "/src/assets/logos-lenguajes/spring-logo.png";
-import apiLogo from "/src/assets/logos-lenguajes/api-logo.png";
-import javascriptLogo from "/src/assets/logos-lenguajes/javaScript-logo.png";
-import postgreLogo from "/src/assets/logos-lenguajes/postgre-logo.png";
-import nodeJsLogo from "/src/assets/logos-lenguajes/node-logo.png";
-import nestJsLogo from "/src/assets/logos-lenguajes/nest-logo.png";
-import typeScriptLogo from "/src/assets/logos-lenguajes/typescript-logo.png";
-import databasesLogo from "/src/assets/logos-lenguajes/databases-logo.png";
+import javaLogo from "/src/assets/logos-lenguajes/java-logo.webp";
+import reactLogo from "/src/assets/logos-lenguajes/react-logo.webp";
+import viteLogo from "/src/assets/logos-lenguajes/vite-logo.webp";
+import mySQLlogo from "/src/assets/logos-lenguajes/mysql-logo.webp";
+import springLogo from "/src/assets/logos-lenguajes/spring-logo.webp";
+import apiLogo from "/src/assets/logos-lenguajes/api-logo.webp";
+import javascriptLogo from "/src/assets/logos-lenguajes/javaScript-logo.webp";
+import postgreLogo from "/src/assets/logos-lenguajes/postgre-logo.webp";
+import nodeJsLogo from "/src/assets/logos-lenguajes/node-logo.webp";
+import nestJsLogo from "/src/assets/logos-lenguajes/nest-logo.webp";
+import typeScriptLogo from "/src/assets/logos-lenguajes/typescript-logo.webp";
+import databasesLogo from "/src/assets/logos-lenguajes/databases-logo.webp";
 import { useState } from "react";
 import { motion } from "framer-motion";
 

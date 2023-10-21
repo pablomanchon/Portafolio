@@ -1,5 +1,5 @@
 import "../styles/header.scss";
-import logo from "../../public/assets/Logo.png";
+import logo from "../../public/assets/Logo.webp";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 

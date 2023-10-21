@@ -1,5 +1,5 @@
 import "../styles/about.scss";
-import perfil from "../../public/assets/perfil.jpg";
+import perfil from "../../public/assets/perfil.webp";
 import { motion, useAnimation } from "framer-motion";
 
 const variantshr1 = {
