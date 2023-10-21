@@ -9,7 +9,7 @@ const whatsappURL = `https://wa.me/${phoneNumber}`;
 export const Header = () => {
   return (
     <header>
-      <img className='logo' src={logo} />
+      <img className='logo' src={logo} alt='logo-header' />
       <nav>
         <a href={whatsappURL} target='_blank' rel='noreferrer noopener'>
           <i className='bi bi-whatsapp' />
