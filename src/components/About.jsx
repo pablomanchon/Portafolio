@@ -48,7 +48,7 @@ export const About = () => {
 
   return (
     <section name='perfil' className='perfil'>
-      <img className='perfil-imagen' src={perfil} />
+      <img className='perfil-imagen' src={perfil} alt='imagen-perfil' />
       <motion.div
         variants={variants}
         initial='noView'
@@ -57,7 +57,8 @@ export const About = () => {
         }}
         onViewportLeave={() => control.start("noView")}
         animate={control}
-        className='about'>
+        className='about'
+      >
         <motion.hr
           initial='noView'
           variants={variantshr1}
@@ -74,12 +75,14 @@ export const About = () => {
         <div className='icons'>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            href='https://github.com/pablomanchon'>
+            href='https://github.com/pablomanchon'
+          >
             <i className='bi bi-github' />
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            href='https://www.linkedin.com/in/pablo-manchon-richardi-471346252/'>
+            href='https://www.linkedin.com/in/pablo-manchon-richardi-471346252/'
+          >
             <i className='bi bi-linkedin' />
           </motion.a>
         </div>
