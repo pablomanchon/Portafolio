@@ -83,14 +83,21 @@ export const Languages = () => {
                 animate={{
                   opacity: 1,
                 }}
-                transition={{ duration: 0.5, delay: index / 8 }}
+                transition={{ duration: 0.5 }}
               >
                 <img
                   className='logo'
                   src={language.logo}
                   alt={`${language.name}-img`}
                 />
-                <span>{language.name}</span>
+                <motion.span
+                  animate={{
+                    rotate: [0, -10, 10, 0],
+                  }}
+                  transition={{ duration: 0.5, delay: index / 8 }}
+                >
+                  {language.name}
+                </motion.span>
               </motion.li>
             )
         )}
