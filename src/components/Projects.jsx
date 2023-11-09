@@ -2,6 +2,7 @@ import "../styles/projects.scss";
 import cartasBares from "../../public/assets/proyectos/cartas-bares.webp";
 import pokemons from "../../public/assets/proyectos/pokemons.webp";
 import tiendaVino from "../../public/assets/proyectos/vinoProject.webp";
+import cineDb from "../../public/assets/proyectos/moviesDb.webp";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Project } from "./Project";
@@ -13,6 +14,13 @@ const projects = [
       "Un proyecto para bares y restaurantes, simplemente escaneas el QR en tu mesa, y obtendrás el menu del lugar",
     image: cartasBares,
     url: "https://cartas-bares.vercel.app/",
+  },
+  {
+    name: "Cine DB",
+    description:
+      "Pagina web con datos de diferentes peliculas, series, cortos, entre otros",
+    image: cineDb,
+    url: "https://movies-pablomanchon.vercel.app/",
   },
   {
     name: "Pokemons",
