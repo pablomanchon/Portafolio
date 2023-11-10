@@ -11,6 +11,8 @@ import nodeJsLogo from "/src/assets/logos-lenguajes/node-logo.webp";
 import nestJsLogo from "/src/assets/logos-lenguajes/nest-logo.webp";
 import typeScriptLogo from "/src/assets/logos-lenguajes/typescript-logo.webp";
 import databasesLogo from "/src/assets/logos-lenguajes/databases-logo.webp";
+import nextJsLogo from "/src/assets/logos-lenguajes/nextjs-logo.webp";
+import expressJsLogo from "/src/assets/logos-lenguajes/express.webp";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -31,6 +33,10 @@ export const Languages = () => {
       name: "React",
     },
     {
+      logo: nextJsLogo,
+      name: "NextJs",
+    },
+    {
       logo: viteLogo,
       name: "Vite",
     },
@@ -45,6 +51,10 @@ export const Languages = () => {
     {
       logo: nodeJsLogo,
       name: "NodeJs",
+    },
+    {
+      logo: expressJsLogo,
+      name: "ExpressJs",
     },
     {
       logo: nestJsLogo,
