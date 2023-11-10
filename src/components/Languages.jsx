@@ -15,65 +15,80 @@ import nextJsLogo from "/src/assets/logos-lenguajes/nextjs-logo.webp";
 import expressJsLogo from "/src/assets/logos-lenguajes/express.webp";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiVitess,
+  SiMysql,
+  SiPostgresql,
+  SiNodedotjs,
+  SiExpress,
+  SiNestjs,
+  SiSpring,
+} from "react-icons/si";
+import { FaJava, FaDatabase } from "react-icons/fa6";
+import { TbApi } from "react-icons/tb";
 
 export const Languages = () => {
   const [isInview, setIsInview] = useState(false);
 
   const languages = [
     {
-      logo: javascriptLogo,
+      logo: <SiJavascript />,
       name: "JavaScript",
     },
     {
-      logo: typeScriptLogo,
+      logo: <SiTypescript />,
       name: "TypeScript",
     },
     {
-      logo: reactLogo,
+      logo: <SiReact />,
       name: "React",
     },
     {
-      logo: nextJsLogo,
+      logo: <SiNextdotjs />,
       name: "NextJs",
     },
     {
-      logo: viteLogo,
+      logo: <SiVitess />,
       name: "Vite",
     },
     {
-      logo: mySQLlogo,
+      logo: <SiMysql />,
       name: "MySQL",
     },
     {
-      logo: postgreLogo,
+      logo: <SiPostgresql />,
       name: "PostgreSQL",
     },
     {
-      logo: nodeJsLogo,
+      logo: <SiNodedotjs />,
       name: "NodeJs",
     },
     {
-      logo: expressJsLogo,
+      logo: <SiExpress />,
       name: "ExpressJs",
     },
     {
-      logo: nestJsLogo,
+      logo: <SiNestjs />,
       name: "NestJs",
     },
     {
-      logo: javaLogo,
+      logo: <FaJava />,
       name: "Java",
     },
     {
-      logo: springLogo,
+      logo: <SiSpring />,
       name: "Spring",
     },
     {
-      logo: databasesLogo,
+      logo: <FaDatabase />,
       name: "Databases",
     },
     {
-      logo: apiLogo,
+      logo: <TbApi />,
       name: "APIs",
     },
   ];
@@ -84,7 +99,7 @@ export const Languages = () => {
         onViewportEnter={() => setIsInview(true)}
         onViewportLeave={() => setIsInview(false)}
       >
-        {languages.map(
+        {/*  {languages.map(
           (language, index) =>
             isInview && (
               <motion.li
@@ -110,7 +125,16 @@ export const Languages = () => {
                 </motion.span>
               </motion.li>
             )
-        )}
+        )} */}
+        {languages.map((language, index) => (
+          <motion.li
+            animate={isInview ? { scale: 1 } : { scale: 2 }}
+            key={index}
+          >
+            <span>{language.logo}</span>
+            {language.name}
+          </motion.li>
+        ))}
       </motion.ul>
       <motion.hr
         whileInView={{ scale: [1, 1.2, 1], transition: { duration: 2 } }}
