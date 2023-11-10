@@ -16,8 +16,8 @@
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items: center;
+    align-content: center;
     gap: 3rem;
     width: 20rem;
     height: 35rem;
@@ -27,6 +27,9 @@
       flex-direction: column;
       gap: 0.6rem;
       align-items: center;
+      span {
+        font-size: 2rem;
+      }
       .logo {
         width: 3rem;
         height: 3rem;
