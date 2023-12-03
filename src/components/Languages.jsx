@@ -90,6 +90,7 @@ export const Languages = () => {
             initial={{ x: -100, opacity: 0 }}
             animate={isInview ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
             transition={{ duration: 0.5, delay: index / 8 }}
+            whileHover={{ scale: 1.2, rotate: [0, -15, 15, -15, 0] }}
             key={index}
           >
             <span>{language.logo}</span>
