@@ -1,9 +1,9 @@
 import "../styles/projects.scss";
 import cartasBares from "../../public/assets/proyectos/cartas-bares.webp";
 import pokemons from "../../public/assets/proyectos/pokemons.webp";
-import tiendaVino from "../../public/assets/proyectos/vinoProject.webp";
 import cineDb from "../../public/assets/proyectos/moviesDb.webp";
 import lunaMistica from "../../public/assets/proyectos/lunaMistica.webp";
+import velascoNaturals from "../../public/assets/proyectos/naturalsVelasco.webp"
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Project } from "./Project";
@@ -31,17 +31,18 @@ const projects = [
     url: "https://luna-mistica-g5e230xpq-pablomanchon.vercel.app/",
   },
   {
+    name: "Naturals Velasco",
+    description:
+      "E-Commerce de ropa y perfumes con carrito de compras",
+    image: velascoNaturals,
+    url: "https://velasconaturals.vercel.app/",
+  },
+  {
     name: "Cine DB",
     description:
       "Pagina web con datos de diferentes peliculas, series, cortos, entre otros",
     image: cineDb,
     url: "https://movies-pablomanchon.vercel.app/",
-  },
-  {
-    name: "Tienda de Vinos",
-    description: "Una tienda de vinos con carrito de compras",
-    image: tiendaVino,
-    url: "https://we-wines.vercel.app/",
   },
 ];
 
