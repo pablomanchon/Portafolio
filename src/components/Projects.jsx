@@ -24,7 +24,7 @@ const projects = [
   },
   {
     name: "Luna mistica",
-    description: "E-Commerce de souvenirs, Frontend y Backend echos en Next.js",
+    description: "E-Commerce de souvenirs, Frontend y Backend hechos en Next.js",
     image: lunaMistica,
     url: "https://luna-mistica.vercel.app/",
   },
