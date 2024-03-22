@@ -3,6 +3,7 @@ import cartasBares from "../../public/assets/proyectos/cartas-bares.webp";
 import pokemons from "../../public/assets/proyectos/pokemons.webp";
 import lunaMistica from "../../public/assets/proyectos/lunaMistica.webp";
 import velascoNaturals from "../../public/assets/proyectos/naturalsVelasco.webp";
+import eCommerce from "../../public/assets/proyectos/eCommerce.webp";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Project } from "./Project";
@@ -33,6 +34,12 @@ const projects = [
     description: "E-Commerce de ropa y perfumes con carrito de compras",
     image: velascoNaturals,
     url: "https://velasconaturals.vercel.app/",
+  },
+  {
+    name: "E-Commerce",
+    description: "E-Commerce variado con Next.js",
+    image: eCommerce,
+    url: "https://ecommerce-pablomanchon.vercel.app/",
   },
 ];
 
