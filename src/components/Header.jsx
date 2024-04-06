@@ -22,7 +22,7 @@ export const Header = () => {
           <i className='bi bi-linkedin' />
         </a>
         <a
-          href='https://github.com/pablomanchon'
+          href='https://github.com/pablomanchon?tab=repositories'
           target='_blank'
           rel='noreferrer noopener'
         >
