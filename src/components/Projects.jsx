@@ -24,12 +24,6 @@ const projects = [
     url: "https://pokemons-bice.vercel.app/",
   },
   {
-    name: "Luna mistica",
-    description: "E-Commerce de souvenirs, Frontend y Backend hechos en Next.js",
-    image: lunaMistica,
-    url: "https://luna-mistica.vercel.app/",
-  },
-  {
     name: "Naturals Velasco",
     description: "E-Commerce de ropa y perfumes con carrito de compras",
     image: velascoNaturals,
