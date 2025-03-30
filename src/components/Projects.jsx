@@ -4,6 +4,7 @@ import pokemons from "../../public/assets/proyectos/pokemons.webp";
 import lunaMistica from "../../public/assets/proyectos/lunaMistica.webp";
 import velascoNaturals from "../../public/assets/proyectos/naturalsVelasco.webp";
 import eCommerce from "../../public/assets/proyectos/eCommerce.webp";
+import eRichardi from "../../public/assets/proyectos/i-e-richardi.png"
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Project } from "./Project";
@@ -24,10 +25,10 @@ const projects = [
     url: "https://pokemons-bice.vercel.app/",
   },
   {
-    name: "Luna mistica",
-    description: "E-Commerce de souvenirs, Frontend y Backend hechos en Next.js",
-    image: lunaMistica,
-    url: "https://luna-mistica.vercel.app/",
+    name: "Instituto Enológico Richardi",
+    description: "Página web para un instituto de enología, consta de 4 secciones (Inicio, Servicios, About us, Contacto)",
+    image: eRichardi,
+    url: "https://mediumseagreen-donkey-505845.hostingersite.com/"
   },
   {
     name: "Naturals Velasco",
