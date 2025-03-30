@@ -34,7 +34,7 @@ const projects = [
     name: "Naturals Velasco",
     description: "E-Commerce de ropa y perfumes con carrito de compras",
     image: velascoNaturals,
-    url: "https://velasconaturals.vercel.app/",
+    url: "https://ecommerce-velasco.vercel.app/",
   },
   {
     name: "E-Commerce",
