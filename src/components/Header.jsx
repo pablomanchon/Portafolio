@@ -28,27 +28,20 @@ export const Header = () => {
         >
           <i className='bi bi-github' />
         </a>
-
-        <motion.h3 whileHover={{ scale: 1.2, y: -10, x: -5, rotate: -5 }}>
+        <div id="nav-pc">
           <Link to='perfil' smooth={true} duration={500} offset={-100}>
             Sobre mi
           </Link>
-        </motion.h3>
-        <motion.h3 whileHover={{ scale: 1.2, y: -10, x: 5, rotate: 5 }}>
           <Link to='projects' smooth={true} duration={500} offset={-80}>
             Proyectos
           </Link>
-        </motion.h3>
-        <motion.h3 whileHover={{ scale: 1.2, y: -10, x: -5, rotate: -5 }}>
-          <Link to='languages' smooth={true} duration={500} offset={50}>
+          <Link to='languages' smooth={true} duration={500} offset={-50}>
             Lenguajes
           </Link>
-        </motion.h3>
-        <motion.h3 whileHover={{ scale: 1.2, y: -10, x: 5, rotate: 5 }}>
           <Link to='contact' smooth={true} duration={500} offset={30}>
             Contactame
           </Link>
-        </motion.h3>
+        </div>
       </nav>
     </header>
   );

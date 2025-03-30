@@ -61,9 +61,11 @@
     }
   }
   .project {
+    width: 100%;
+    max-width: 30rem;
     img {
-      width: 15rem;
       border-radius: 8px;
+      width: 100%;
     }
   }
 }
