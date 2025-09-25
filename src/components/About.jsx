@@ -65,12 +65,9 @@ export const About = () => {
           animate={control}
           className='first-hr'
         />
-        <h3>Desarrollador web Full-Stack</h3>
+        <h3>Programador Full-Stack</h3>
         <p>
-          Me gusta estar en constante aprendizaje y evolución, razón por la que
-          decidí dar un giro a mi carrera profesional y dedicarme por completo
-          al mundo del desarrollo web. Me siento cómodo trabajando en equipo, me
-          considero una persona organizada y comprometida con mi trabajo
+          Desarrollador fullstack con experiencia la creación de aplicaciones web y de escritorio. Me especializo en Java, Spring Boot, React y Electron con NestJs, integrando frontend y backend con bases de datos SQL. Busco aportar soluciones eficientes y escalables en proyectos tecnológicos.
         </p>
         <div className='icons'>
           <motion.a
