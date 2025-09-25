@@ -9,13 +9,6 @@ import { Project } from "./Project";
 
 const projects = [
   {
-    name: "Cartas",
-    description:
-      "Un proyecto para bares y restaurantes, simplemente escaneas el QR en tu mesa, y obtendrás el menu del lugar",
-    image: cartasBares,
-    url: "https://cartas-bares.vercel.app/",
-  },
-  {
     name: "Instituto Enológico Richardi",
     description: "Página web para un instituto de enología, consta de 4 secciones (Inicio, Servicios, About us, Contacto)",
     image: eRichardi,
@@ -32,6 +25,13 @@ const projects = [
     description: "Aplicación de Stock y Ventas con extras de gastronomía y control de horarios para empleados",
     image: tanoStock,
     github: "https://github.com/pablomanchon/stock-java"
+  },
+  {
+    name: "Cartas",
+    description:
+      "Un proyecto para bares y restaurantes, simplemente escaneas el QR en tu mesa, y obtendrás el menu del lugar",
+    image: cartasBares,
+    url: "https://cartas-bares.vercel.app/",
   },
 ];
 
