@@ -18,13 +18,14 @@ const projects = [
     name: "Zafiro - Stock y Ventas",
     description: "Aplicación de Stock y Ventas moderna hecha en Electron con backend en NestJs con SQLite",
     image: zafiroSyv,
-    github: "https://github.com/pablomanchon/zafiro-ventas-electron"
+    github: "https://github.com/pablomanchon/zafiro-ventas-electron",
+    download: "/downloads/zafiro-setup.exe"
   },
   {
     name: "Tano Stock - Stock, Ventas y Gastronomía",
     description: "Aplicación de Stock y Ventas con extras de gastronomía y control de horarios para empleados hecha con java Swing y SQLite",
     image: tanoStock,
-    github: "https://github.com/pablomanchon/stock-java"
+    github: "https://github.com/pablomanchon/stock-java",
   },
   {
     name: "Cartas",
