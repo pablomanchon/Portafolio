@@ -113,7 +113,9 @@
       .card {
         flex-direction: column-reverse;
         gap: 1rem;
-
+        .project-image{
+          width: 20rem;
+        }
         hr {
           display: none;
         }
